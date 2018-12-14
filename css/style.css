@@ -122,8 +122,11 @@ body{
     line-height: 28px;
 }
 .wrapper-page__image{
-	position: relative;
+	position: sticky;
 	max-width: 100%;
+	height: 600px;
+	top: 0;
+	bottom: 0;
 
 }
 .wrapper-page__image img{
