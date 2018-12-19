@@ -30,7 +30,7 @@ body{
 .page{
 	height: auto;
 	padding-top: 75px; 
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 	position: relative;
 }
 .page-bgc--golub{
@@ -178,16 +178,16 @@ body{
     width: 25px;
     margin: 0 auto;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-	left:0;
-}
-.sticky2 {
-  position: fixed;
-  bottom: 0;
+
+.fixed{
+	position: fixed;
+	top:0;
 }
 
+.fixed2{
+	position: fixed;
+	bottom: 0;
+}
 
 /*Экстрабольшие девайсы <=1200*/
 @media (max-width: 1200px) {
