@@ -112,10 +112,9 @@ body{
 .container-image__button{
 	display: none;
 }
-.arrow-up{
-	position: absolute;
-	left: 0;
-	right: 0 ;
+
+.arrow-up2{
+	position: sticky;
 	bottom: 0;
     width: 100px;
     height: 50px;
@@ -124,9 +123,9 @@ body{
     -webkit-border-radius: 100px 100px 0 0;
     margin: 0px auto;
     cursor: pointer;
+    margin-bottom: -75px; 
 }
-
-.arrow-up span{
+.arrow-up2 span{
 	font-size: 27px;
     line-height: 28px;
     font-weight: 800;
@@ -141,6 +140,35 @@ body{
     width: 25px;
     margin: 0 auto;
 }
+.arrow-up1{
+	position: absolute;
+	left: 0;
+	right: 0 ;
+	bottom: 0;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px 100px 0 0;
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    margin: 0px auto;
+    cursor: pointer;
+}
+.arrow-up1 span{
+	font-size: 27px;
+    line-height: 28px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    transform: translateY(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    width: 25px;
+    margin: 0 auto;
+}
+
 .arrow--fiol{
 	 color: #4d34d3;
 	 background: #adeeee;
@@ -151,17 +179,17 @@ body{
 }
 
 .arrow-down{
-	position: absolute;
-	left: 0;
-	right: 0 ;
+	position: sticky;
 	top: 0;
     width: 100px;
     height: 50px;
     border-radius: 0 0 100px 100px ;
     -moz-border-radius:  0 0 100px 100px;
     -webkit-border-radius:  0 0 100px 100px;
-    margin: 0px auto;
+    margin: 0 auto;
     cursor: pointer;
+    margin-top: -75px;
+    z-index: 1;
 }
 .arrow-down span{
 	font-size: 27px;
@@ -178,17 +206,9 @@ body{
     width: 25px;
     margin: 0 auto;
 }
-
-.fixed{
-	position: fixed;
-	top:0;
+.arrow-down-rem{
+	display: none;
 }
-
-.fixed2{
-	position: fixed;
-	bottom: 0;
-}
-
 /*Экстрабольшие девайсы <=1200*/
 @media (max-width: 1200px) {
 	.container-image__image1{
@@ -243,8 +263,11 @@ body{
 		width: 250px;
 		height: 170px;
 	}
-	.arrow-up{
-	display: none;
+	.arrow-up2{
+		display: none;
+	}
+	.arrow-up1{
+		display: none;
 	}
 	.arrow-down{
 		display: none;
@@ -289,7 +312,10 @@ body{
 	    display: block;
 	    cursor: pointer;
 }
-.arrow-up{
+.arrow-up2{
+	display: none;
+}
+.arrow-up1{
 	display: none;
 }
 .arrow-down{
